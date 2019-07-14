@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+</body>
+<script src="jquereMe.js"></script>
+<script>
+    let dome = $('.box');
+    dome.css('height','100px');
+    dome.css('color','#fff');
+    dome.css('backgroundColor','#205');
+    dome.addClass('a');
+    dome.removeClass('a');
+    let qutto = dome.css('height');
+    console.log(qutto);
+</script>
+</html>
