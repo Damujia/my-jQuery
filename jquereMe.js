@@ -33,5 +33,24 @@
             this[i].classList.remove(className);
         }
     };
+
+
+
+
+
+
+
+    //显示和隐藏
+    Init.prototype.hide = function (nature) {
+        for (let i = 0; i < this.length; i++){
+            this[i].style.display = "none";
+            this[i].style.transition = "all " + nature/1000 + "s";
+        }
+    }
+    Init.prototype.show = function () {
+        for (let i = 0; i < this.length; i++){
+            this[i].style.display = "block";
+        }
+    }
     window.$ = window.jQuery = jQuery;
 }());

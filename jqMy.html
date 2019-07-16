@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <style>
+        div{
+            transition
+        }
+    </style>
 </head>
 <body>
     <div class="box">1</div>
     <div class="box">2</div>
-    <div class="box">3</div>
+    <div class="boxr">3</div>
 </body>
 <script src="jquereMe.js"></script>
 <script>
@@ -19,5 +24,13 @@
     dome.removeClass('a');
     let qutto = dome.css('height');
     console.log(qutto);
+    $('.box').hide(1000);
+    $('.box').show();
+    $('.boxr').css('height','200px');
+    $('.boxr').css('backgroundColor', 'red');
+    // $('.boxr').hide(1000);
+    $('.boxr').onclick = function(){
+        console.log(1);
+    };
 </script>
 </html>
